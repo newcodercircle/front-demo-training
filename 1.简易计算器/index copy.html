@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>实战学前端-简易计算器</title>
+  <link rel="stylesheet" href="./css/index.css" />
+  <script src="./js/function.js"></script>
+  <script src="./js/index.js"></script>
+</head>
+<body>
+  <div class="page-wrapper">
+    <div class="calc-container">
+      <!-- 头部操作按钮 -->
+      <div class="header">
+        <div class="header-left">
+          <div class="window-action close"></div>
+          <div class="window-action min"></div>
+          <div class="window-action max"></div>
+        </div>
+        <div class="header-right">
+          <div class="window-action theme"></div>
+          <div class="window-action history"></div>
+          <div class="window-action info"></div>
+        </div>
+      </div>
+
+      <!-- 计算区域 -->
+      <div class="calc-area">
+        <!-- 计算行 -->
+        <div class="calc-line">10</div>
+        <!-- 当前数字显示行 -->
+        <div class="current-number">1</div>
+      </div>
+
+      <!-- 数字键盘块 -->
+      <div class="keyboard-container">
+        <ul>
+          <li class="keyboard-line">
+            <div class="keycode" id="clear">CE</div>
+            <div class="keycode" id="minusSign">±</div>
+            <div class="keycode" id="point">%</div>
+            <div class="keycode" id="divide">÷</div>
+          </li>
+          <li class="keyboard-line">
+            <div class="keycode number">7</div>
+            <div class="keycode number">9</div>
+            <div class="keycode number">9</div>
+            <div class="keycode" id="multiplication">×</div>
+          </li>
+          <li class="keyboard-line">
+            <div class="keycode number">4</div>
+            <div class="keycode number">5</div>
+            <div class="keycode number">6</div>
+            <div class="keycode" id="subtraction">-</div>
+          </li>
+          <li class="keyboard-line">
+            <div class="keycode number">1</div>
+            <div class="keycode number">2</div>
+            <div class="keycode number">3</div>
+            <div class="keycode" id="addition">+</div>
+          </li>
+          <li class="keyboard-line">
+            <div class="keycode number" style="width: 50vw">0</div>
+            <div class="keycode" id="dot">·</div>
+            <div class="keycode" id="equal">=</div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

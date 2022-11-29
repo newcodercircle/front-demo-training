@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>实战学前端-简易计算器</title>
+  <link rel="stylesheet" href="./css/index.css" />
+</head>
+<body>
+  <div class="page-wrapper">
+    <div class="calc-container">
+      <!-- 头部操作按钮 -->
+      <div class="header">
+        <div class="header-left">
+          <div class="window-action close"></div>
+          <div class="window-action min"></div>
+          <div class="window-action max"></div>
+        </div>
+        <div class="header-right">
+          <div class="window-action theme">
+            <i class="gg-sun" style="display: none"></i>
+            <i class="gg-moon"></i>
+          </div>
+          <div class="window-action history">
+            <i class="gg-browser"></i>
+          </div>
+          <div class="window-action info"></div>
+        </div>
+      </div>
+
+      <!-- 计算区域 -->
+      <div class="calc-area">
+        <!-- 计算行 -->
+        <div class="calc-line"></div>
+        <!-- 当前数字显示行 -->
+        <div class="current-number"></div>
+      </div>
+
+      <!-- 数字键盘块 -->
+      <div class="keyboard-container" id="inputBlock">
+        <ul>
+          <li class="keyboard-line">
+            <div class="keycode" data-action="clear">C</div>
+            <div class="keycode" data-action="minusSign">±</div>
+            <div class="keycode" data-action="point">%</div>
+            <div class="keycode" data-action="divide">÷</div>
+          </li>
+          <li class="keyboard-line">
+            <div class="keycode number" data-action="7">7</div>
+            <div class="keycode number" data-action="8">8</div>
+            <div class="keycode number" data-action="9">9</div>
+            <div class="keycode" data-action="multiplication">×</div>
+          </li>
+          <li class="keyboard-line">
+            <div class="keycode number" data-action="4">4</div>
+            <div class="keycode number" data-action="5">5</div>
+            <div class="keycode number" data-action="6">6</div>
+            <div class="keycode" data-action="subtraction">-</div>
+          </li>
+          <li class="keyboard-line">
+            <div class="keycode number" data-action="1">1</div>
+            <div class="keycode number" data-action="2">2</div>
+            <div class="keycode number" data-action="3">3</div>
+            <div class="keycode" data-action="addition">+</div>
+          </li>
+          <li class="keyboard-line">
+            <div class="keycode number" style="width: 50vw" data-action="0">0</div>
+            <div class="keycode" data-action="dot">·</div>
+            <div class="keycode" data-action="equal">=</div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- 历史记录 -->
+    <div class="history-container hidden">
+      <div class="title">历史记录</div>
+      <ul id="historyWrapper">
+        <li class="history-item">1+2-3=0</li>
+      </ul>
+    </div>
+  </div>
+  <script src="./js/function.js"></script>
+  <script src="./js/index.js"></script>
+</body>
+</html>

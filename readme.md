@@ -1,6 +1,6 @@
 <!-- markdownlint-disable -->
 <p align="center">
-  <img width="240" src="./resource/logo3.png?raw=true" style="text-align: center;"/>
+  <img width="240" src="./resource/logo4.png?raw=true" style="text-align: center;"/>
 </p>
 <h1 align="center">小白前端实战小DEMO系列</h1>
 <h4 align="center">记录小白学前端的完成demo的过程</h4>

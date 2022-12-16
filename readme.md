@@ -11,7 +11,9 @@
 
 相关文章将会更新在小白的公众号，大家可以关注下：
 
-![小白技术圈](./resource/logo2.png?raw=true)
+<p align="center">
+  <img width="400" src="./resource/logo2.png?raw=true" style="text-align: center;"/>
+</p>
 
 另外 关注后 回复 `pdf004` 小白为你准备了一份前端学习的书籍，涉及到前端开发和学习的方方面面，都是电子版本的。
 

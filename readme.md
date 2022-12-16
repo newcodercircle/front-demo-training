@@ -1,8 +1,11 @@
-
+<!-- markdownlint-disable -->
+<p align="center">
+  <img width="240" src="./resource/logo3.png?raw=true" style="text-align: center;"/>
+</p>
 <h1 align="center">小白前端实战小DEMO系列</h1>
 <h4 align="center">记录小白学前端的完成demo的过程</h4>
 
-[![Author: Mr.Huang](https://img.shields.io/badge/作者-Mr.Huang-blue.svg?style=for-the-badge)](https://zukmb.cn) [![Open in Visual Studio Code](https://img.shields.io/badge/-open%20in%20vscode-blue?style=for-the-badge&logo=visualstudiocode)](https://github.dev/vuepress-theme-weasel/vuepress-theme-weasel)
+[![Author: Mr.Huang](https://img.shields.io/badge/作者-小白-blue.svg?style=for-the-badge)](https://zukmb.cn) [![Open in Visual Studio Code](https://img.shields.io/badge/-open%20in%20vscode-blue?style=for-the-badge&logo=visualstudiocode)](https://github.dev/newcodercircle/front-demo-training)
 
 > 小白将会不定期的更新一下功能的实战经验，会记录整个demo的实现过程，有更好实现方式的同学可以，直接提 issue ，一起讨论，互相学习，功共同进步。
 

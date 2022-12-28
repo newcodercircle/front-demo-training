@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>炫彩边框</title>
+  <style>
+    .gradient-border {
+      border: solid 5px transparent;
+      border-radius: 10px;
+      background-image: linear-gradient(white, white), 
+        linear-gradient(315deg,#833ab4,#fd1d1d 50%,#fcb045);
+      background-origin: border-box;
+      background-clip: content-box, border-box;
+    }
+    .box {
+      width: 350px;
+      height: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 100px auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="box gradient-border">
+    炫酷渐变边框
+  </div>
+</body>
+</html>

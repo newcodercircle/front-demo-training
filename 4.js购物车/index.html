@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <title>js购物车</title>
+  <link rel="stylesheet" href="./iconfont.css" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div class="page-wrap">
+    <div class="header">
+      <div class="title">购物车</div>
+      <div class="action-btns">
+        <a href="javascript:;" id="deleteBtn">操作</a>
+      </div>
+    </div>
+    <div class="shop-car" id="shopcarContainer"></div>
+    <div class="action-bar">
+      <div class="check-all">
+        <input hidden type="checkbox" />
+        <i class="iconfont check-status"></i>
+      </div>
+      <div class="action-content">
+        <div class="total-text">合计：￥<span id="totalPrice">0</span></div>
+        <button class="delete-btn" style="display: none;">删除</button>
+        <button class="submit">去结算</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // 假设此处是后端返回的数据
+    var data = [
+      {
+        id: 1,
+        goods_name: '鲜活 江苏洪泽湖南大闸蟹3对(母215-235g，公290-310g)',
+        goods_tags: ['特价', '24H发货'],
+        goods_thumb: './images/good_1.png',
+        origin_price: 45.8,
+        current_price: 39.9
+      },
+      {
+        id: 2,
+        goods_name: '四川眉山 爱媛38号果冻橙礼盒装',
+        goods_tags: ['特价', '24H发货'],
+        goods_thumb: './images/good_2.png',
+        origin_price: 45.8,
+        current_price: 39.9
+      }
+    ]
+  </script>
+  <script src="./script.js"></script>
+  <script>
+    new Shopcar(data)
+  </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "2076374",
+      "name": "对勾小",
+      "font_class": "duigouxiao",
+      "unicode": "e8bd",
+      "unicode_decimal": 59581
+    },
+    {
+      "icon_id": "5298547",
+      "name": "checkbox未选中小",
+      "font_class": "checkboxweixuanzhongxiao",
+      "unicode": "e933",
+      "unicode_decimal": 59699
+    }
+  ]
+}

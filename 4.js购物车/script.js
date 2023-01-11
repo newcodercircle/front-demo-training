@@ -50,8 +50,9 @@
     this.totalElement = $('#totalPrice')
     this.checkAllinput = $(".action-bar input")
     this.deleteBtn = $("#deleteBtn")
-    this.deleteButton = $(".delete-btn");
-    this.submit = $(".submit");
+    this.deleteButton = $(".delete-btn")
+    this.submit = $(".submit")
+    this.totalText = $("#totalText")
 
     // 当前是否在删除状态下
     this.deleteStatus = false
@@ -277,11 +278,13 @@
         that.deleteStatus = true;
         that.deleteButton.style.display = 'block';
         that.submit.style.display = 'none';
+        that.totalText.style.display = 'none'
       } else {
         that.deleteBtn.innerHTML = "操作";
         that.deleteStatus = false;
-        that.deleteButton.style.display = 'none';
-        that.submit.style.display = "block";
+        that.deleteButton.style.display = 'none'
+        that.submit.style.display = "block"
+        that.totalText.style.display = "block"
       }
     }
 
@@ -292,7 +295,9 @@
       var goodsData = that.goodsData.filter(function (goods) {
         return !ids.includes(goods.id)
       })
+      that.checkGoods = []
       that.renderHtml(goodsData)
+      that.total()
     }
 
     this.deleteBtn.addEventListener('click', handler, false)

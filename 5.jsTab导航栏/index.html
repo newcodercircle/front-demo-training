@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <title>Tab导航栏</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div class="page-container">
+    <div style="height: 100px;">顶部内容</div>
+    <div class="tab-container">
+      <ul class="tab-content" id="container">
+        <li class="tab-item active" data-index="0">推荐</li>
+        <li class="tab-item" data-index="1">当地</li>
+        <li class="tab-item" data-index="2">财经</li>
+        <li class="tab-item" data-index="3">体育</li>
+        <li class="tab-item" data-index="4">新闻</li>
+        <li class="tab-item" data-index="5">金融</li>
+        <li class="tab-item" data-index="6">生活</li>
+        <li class="tab-item" data-index="7">国际</li>
+        <li class="tab-item" data-index="8">数码</li>
+        <li class="tab-item" data-index="9">娱乐</li>
+        <li class="tab-item" data-index="10">养生</li>
+        <li class="tab-item" data-index="11">育儿</li>
+        <li class="tab-item" data-index="12">时尚</li>
+        <li class="tab-item" data-index="13">军事</li>
+        <li class="tab-item" data-index="14">数码</li>
+        <li class="tab-item" data-index="15">历史</li>
+      </ul>
+    </div>
+    <div style="height: 800px;">底部内容1</div>
+    <div style="height: 800px;">底部内容2</div>
+  </div>
+  <script src="./javascript.js"></script>
+  <script>
+    window.onload = function () {
+      new Tab({
+        wrap: '.tab-container',
+        container: '#container',
+        item: '.tab-item'
+      })
+    }
+  </script>
+</body>
+</html>
